@@ -32,9 +32,11 @@ html {
 	font-size: 3em;
 }
 
+p { display: inline }
+
 /* Custom Styles */
 
-main {
+main  {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -44,12 +46,19 @@ main {
 }
 
 main > .intro {
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.75em;
+	font-family: 'Brush Script MT', cursive;
+	font-size: 4.75em;
+	font-weight: 600;
+}
+
+main > .subintro {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 2.00em;
 	font-weight: 600;
 }
 
 main > .tagline {
+	font-family: 'Helvetica', sans-serif;
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
