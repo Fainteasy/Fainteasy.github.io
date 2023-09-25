@@ -32,7 +32,10 @@ html {
 	font-size: 3em;
 }
 
-p { display: inline }
+p { 
+	display: inline;
+	font-weight: bold; 
+}
 
 /* Custom Styles */
 
@@ -45,19 +48,19 @@ main  {
 	text-align: center;
 }
 
-main > .intro {
-	font-family: 'Brush Script MT', cursive;
-	font-size: 4.75em;
+.intro {
+	font-family: 'Helvetica', cursive;
+	font-size: 3.75em;
 	font-weight: 600;
 }
 
-main > .subintro {
+.subintro {
 	font-family: 'Helvetica', sans-serif;
 	font-size: 2.00em;
 	font-weight: 600;
 }
 
-main > .tagline {
+.tagline {
 	font-family: 'Helvetica', sans-serif;
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
@@ -82,3 +85,58 @@ main > .tagline {
 	width: 2.65rem;
 	height: 2.65rem;
 }
+.icons-social {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0 30px;
+	text-align: center;
+	
+}
+.icon {
+	display: flex;
+	flex-direction: column;
+	width:150px;
+	height: 130px;
+	margin: auto;
+	margin :5px;
+	border-radius: 10px;
+	background-color: #2A6041;
+	
+}
+.icon:hover {
+	animation: mail 1s;
+	animation-fill-mode: forwards;
+}
+.icons-social a:hover {
+	animation: mail 1s;
+	animation-fill-mode: forwards;
+}
+#logo {
+	background-color: #2A6041;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 5px;
+}
+main img:hover{
+	animation: logo 0.5s infinite alternate;
+}
+@keyframes mail {
+	0% {
+		transform: scale(1.0);
+		color: #384E77;
+	}
+	100% {
+		transform: scale(1.2);
+		color: #18314F;
+	}
+  }
+  @keyframes logo {
+	from {
+		transform: rotate(-20deg);
+	}
+	to{
+		transform: rotate(20deg);
+	}
+}
+  
